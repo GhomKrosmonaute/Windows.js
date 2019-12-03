@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gupter|Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 * {
     padding: 0;
@@ -13,7 +13,7 @@ body {
     --window-orange:    #fc9b09;
     --window-green:     #35d315;
     --window-title-font: 'Lato', sans-serif;
-    --window-content-font: 'Gupter', serif;
+    --window-content-font: 'Lato', sans-serif;
 }
 
 .window {
@@ -24,6 +24,7 @@ body {
     box-shadow: 0 2px 10px var(--window-black);
     background-color: var(--window-white);
     color: var(--window-black);
+    cursor: default;
 }
 
     .window-header {
@@ -32,6 +33,7 @@ body {
         background-color: var(--window-black);
         color: var(--window-white);
         font-family: var(--window-title-font);
+        cursor: grab;
     }
 
         .window-buttons {
@@ -40,6 +42,7 @@ body {
             align-items: center;
             width: 50px;
             padding-left: 10px;
+            cursor: default;
         }
 
             .window-buttons > div {
@@ -47,7 +50,8 @@ body {
                 background-color: var(--window-grey);
                 width: 12px;
                 height: 12px;
-                transition: background-color 200ms;
+                cursor: pointer;
+                transition: background-color 150ms;
             }
 
             .window-close:hover {
@@ -66,8 +70,7 @@ body {
             flex-grow: 1;
             text-align: center;
             white-space: nowrap;
-            font-family: serif;
-            padding-top: 3px;
+            padding-top: 2px;
         }
 
     .window-body {
