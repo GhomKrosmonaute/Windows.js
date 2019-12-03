@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Gupter|Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    --window-black:     #111;
+    --window-grey:      #5f5f5f;
+    --window-white:     #f0f0f0;
+    --window-red:       #ff2c2c;
+    --window-orange:    #fc9b09;
+    --window-green:     #35d315;
+    --window-title-font: 'Lato', sans-serif;
+    --window-content-font: 'Gupter', serif;
+}
+
+.window {
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 2px 10px var(--window-black);
+    background-color: var(--window-white);
+    color: var(--window-black);
+}
+
+    .window-header {
+        display: flex;
+        height: 25px;
+        background-color: var(--window-black);
+        color: var(--window-white);
+        font-family: var(--window-title-font);
+    }
+
+        .window-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 50px;
+            padding-left: 10px;
+        }
+
+            .window-buttons > div {
+                border-radius: 50%;
+                background-color: var(--window-grey);
+                width: 12px;
+                height: 12px;
+                transition: background-color 200ms;
+            }
+
+            .window-close:hover {
+                background-color: var(--window-red);
+            }
+
+            .window-minimize:hover {
+                background-color: var(--window-orange);
+            }
+
+            .window-fullscreen:hover {
+                background-color: var(--window-green);
+            }
+
+        .window-title {
+            flex-grow: 1;
+            text-align: center;
+            white-space: nowrap;
+            font-family: serif;
+            padding-top: 3px;
+        }
+
+    .window-body {
+        font-family: var(--window-content-font);
+        display: flex;
+        flex-direction: column;
+    }
+
+        

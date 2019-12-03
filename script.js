@@ -1,4 +1,14 @@
 
 document.addEventListener('DOMContentLoaded',()=>{
-    const helloWorld = new Window(20,20,600,300,'HelloWorld - test','Hello World !')
+    new Window(20,20,400,200,
+        'Windows.js',`
+            Hello World !
+        `
+    );
+    new Window(20,20,600,300,
+        'Secondary window',`
+            <h1> Header </h1>
+            <p> Paragraphe </p>
+        `
+    )
 })
