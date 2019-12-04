@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 * {
@@ -5,76 +6,103 @@
     margin: 0;
 }
 
+::selection,
+::-moz-selection {
+    background: #00000000;
+}
+
 body {
-    --window-black:     #111;
-    --window-grey:      #5f5f5f;
-    --window-white:     #f0f0f0;
-    --window-red:       #ff2c2c;
-    --window-orange:    #fc9b09;
-    --window-green:     #35d315;
-    --window-title-font: 'Lato', sans-serif;
-    --window-content-font: 'Lato', sans-serif;
+
+    --window-boxShadow: 0 2px 10px #111;
+    --window-borderRadius: 10px;
+
+    --window-body-background: #f0f0f0;
+    --window-body-textColor: #111;
+    --window-body-fontFamily: 'Lato', sans-serif;
+
+    --window-header-background: #111;
+    --window-header-textColor: #f0f0f0;
+    --window-header-fontFamily: 'Lato', sans-serif;
+    --window-header-height: 25px;
+
+    --window-buttons-width: 50px;
+    --window-buttons-padding: 0 0 0 10px;
+    --window-buttons-justifyContent: space-between;
+    --window-buttons-alignItems: center;
+    
+    --window-button-background: #5f5f5f;
+    --window-button-borderRadius: 50%;
+    --window-button-width: 12px;
+    --window-button-height: 12px;
+    --window-button-transition: background-color 150ms;
+
+    --window-close-background: #ff2c2c;
+    --window-minimize-background: #fc9b09;
+    --window-fullscreen-background: #35d315;
+
+    --window-title-padding: 2px 0 0 0;
+
 }
 
 .window {
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: var(--window-borderRadius);
     position: absolute;
     z-index: 1;
-    box-shadow: 0 2px 10px var(--window-black);
-    background-color: var(--window-white);
-    color: var(--window-black);
+    box-shadow: var(--window-boxShadow);
+    background: var(--window-body-background);
+    color: var(--window-body-textColor);
     cursor: default;
 }
 
     .window-header {
         display: flex;
-        height: 25px;
-        background-color: var(--window-black);
-        color: var(--window-white);
-        font-family: var(--window-title-font);
+        height: var(--window-header-height);
+        background: var(--window-header-background);
+        color: var(--window-header-textColor);
+        font-family: var(--window-header-fontFamily);
         cursor: grab;
     }
 
         .window-buttons {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 50px;
-            padding-left: 10px;
+            justify-content: var(--window-buttons-justifyContent);
+            align-items: var(--window-buttons-alignItems);
+            width: var(--window-buttons-width);
+            padding: var(--window-buttons-padding);
             cursor: default;
         }
 
             .window-buttons > div {
-                border-radius: 50%;
-                background-color: var(--window-grey);
-                width: 12px;
-                height: 12px;
+                border-radius: var(--window-button-borderRadius);
+                background: var(--window-button-background);
+                width: var(--window-button-width);
+                height: var(--window-button-height);
+                transition: var(--window-button-transition);
                 cursor: pointer;
-                transition: background-color 150ms;
             }
 
             .window-close:hover {
-                background-color: var(--window-red);
+                background: var(--window-close-background);
             }
 
             .window-minimize:hover {
-                background-color: var(--window-orange);
+                background: var(--window-minimize-background);
             }
 
             .window-fullscreen:hover {
-                background-color: var(--window-green);
+                background: var(--window-fullscreen-background);
             }
 
         .window-title {
             flex-grow: 1;
             text-align: center;
             white-space: nowrap;
-            padding-top: 2px;
+            padding: var(--window-title-padding);
         }
 
     .window-body {
-        font-family: var(--window-content-font);
+        font-family: var(--window-body-fontFamily);
         display: flex;
         flex-direction: column;
     }
