@@ -16,8 +16,58 @@ A window manager for your website style !
 ```
 
 ```js
-new Window(
-    x, y, width, height, // numbers
-    HTMLHeader, HTMLBody // strings
-)
+// all props are optionals
+const
+    x = Number, // left
+    y = Number, // top
+    width = Number,
+    height = Number,
+    options = {
+        theme = String, // theme to use
+        title = String, // title visible on top
+        content = String, // HTML content of body
+        style = String // StyleSheet of window
+    };
+
+new Window( x, y, width, height, options ) 
+```
+
+## Create a theme
+
+```js
+Window.addTheme( 'Theme name', 'template', {
+
+    // Styles
+
+    window: { // base container
+
+        /* 
+            Name css properties like the 
+            HTMLElement.style properties.
+            like this : 
+        */
+        boxShadow: '0 5px 20px #111',
+        borderRadius: '10px',
+        background: '#111'
+
+    },
+
+    header: { /* title container */ },
+    body: { /* content container */ },
+
+    button: { /* for each button */ }, 
+
+    close: { /* close button */ }, 
+    close_hover: { /* close button hovered */ },
+
+    minimize: { /* minimize button */ }, 
+    minimize_hover: { /* minimize button hovered */ },
+
+    fullscreen: { /* fullscreen button */ }, 
+    fullscreen_hover: { /* fullscreen button hovered */ },
+
+    title: { /* title side of header */ },
+    buttons: { /* buttons side of header */ }
+    
+})
 ```
