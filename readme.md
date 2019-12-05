@@ -109,6 +109,10 @@ Window.addTheme( 'Default but red', 'apple', {
     title: { /* title side of header */ },
     buttons: { /* buttons side of header */ }
     
+},{
+
+    // Default options used on Window constructor if an option is missing
+
 })
 ```
 
@@ -117,6 +121,7 @@ Window.addTheme( 'Default but red', 'apple', {
 Here are the basic elements understood by the CSS, usable in your templates and your themes.
 
 - header
+    - icon
     - title
     - buttons
         - close

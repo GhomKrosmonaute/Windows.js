@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Mono|Ubuntu|Ubuntu+Mono&display=swap');
 
 * {
     padding: 0;
@@ -80,6 +80,9 @@ body {
                 height: var(--window-button-height);
                 transition: var(--window-button-transition);
                 cursor: pointer;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+                background-size: 70% !important;
             }
 
             .window-close:hover {
@@ -101,6 +104,13 @@ body {
             padding: var(--window-title-padding);
         }
 
+        .window-icon,
+        .window-icon > * {
+            padding: 2px;
+            height: calc(var(--window-header-height) - 8px);
+            text-align: center;
+        }
+
     .window-body {
         font-family: var(--window-body-fontFamily);
         display: flex;
@@ -111,7 +121,7 @@ body {
     }
 
     .window-footer {
-        
+        height: var(--window-header-height);
     }
 
         
