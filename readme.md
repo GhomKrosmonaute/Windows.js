@@ -111,3 +111,16 @@ Window.addTheme( 'Default but red', 'apple', {
     
 })
 ```
+
+## Basic theme/template/css elements
+
+Here are the basic elements understood by the CSS, usable in your templates and your themes.
+
+- header
+    - title
+    - buttons
+        - close
+        - minimize
+        - fullscreen
+- body
+- footer
