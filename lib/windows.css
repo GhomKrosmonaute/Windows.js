@@ -105,6 +105,9 @@ body {
         font-family: var(--window-body-fontFamily);
         display: flex;
         flex-direction: column;
+        width: 100%;
+        height: calc(100% - var(--window-header-height));
+        overflow: auto;
     }
 
     .window-footer {

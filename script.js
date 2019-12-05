@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded',()=>{
             <h3> Apply css inside window is very simply: </h3>
             <pre><code>
     new Window( x, y, width, height, {
+        title: 'Windows.js — Online test',
+        content: '&lt;h1&gt; Hello World ! &lt;/h1&gt;',
         style: \`
             h1 { 
                 text-align: center; 
@@ -19,6 +21,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         \`
     })
             </code></pre>
+            <h3> by Ghom </h3>
         `,
         style: `
             h1 { 
