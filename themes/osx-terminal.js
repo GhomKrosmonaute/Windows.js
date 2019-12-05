@@ -14,7 +14,6 @@ Window.addTheme('OSX Terminal', 'apple', {
     header: {
         background: '-webkit-linear-gradient(top, #e8e8e8, #bcbbbc)',
         color: '#111',
-        height: '25px',
     },
     body: {
         color: '#f0f0f0',
@@ -38,6 +37,6 @@ Window.addTheme('OSX Terminal', 'apple', {
     fullscreen_hover: { background: '#35d31544' },
     title: {
         textShadow: '0 1px 0 #f0f0f0',
-        padding: '2px 0 0 0'
+        paddingRight: '60px'
     }
 })

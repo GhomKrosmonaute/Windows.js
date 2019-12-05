@@ -12,9 +12,9 @@ A window manager for your website style !
 
 ## Usage
 
-Add this code to your HTML head tag. To chose a theme, open the <a href="./themes/">`./themes/`</a> folder.
-
 ### your-page.html
+
+Add this code to your HTML head tag. To chose a theme, open the <a href="./themes/">`./themes/`</a> folder.
 
 ```html
 <!-- Mandatory stylesheet -->
@@ -30,10 +30,10 @@ Add this code to your HTML head tag. To chose a theme, open the <a href="./theme
 <script src="your-script.js"></script>
 ```
 
+### your-script.js
+
 Then instantiate your first window.  
 All parameters are optional, enjoy !
-
-### your-script.js
 
 ```js
 const
@@ -54,6 +54,25 @@ const
     };
 
 new Window( x, y, width, height, options ) 
+```
+
+For example:
+
+```js
+new Window( 0, 0, 600, 300, {
+    title: 'Windows.js — Test',
+    content: `
+        <h1> Hello World ! </h1>
+    `,
+    style: `
+        h1 { 
+            text-align: center; 
+            padding: 15px;
+            font-size: 38px;
+            color: gray;
+        }
+    `
+})
 ```
 
 <hr>

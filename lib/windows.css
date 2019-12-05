@@ -11,7 +11,7 @@
     background: #00000000;
 }
 
-body {
+:root {
 
     --window-boxShadow: 0 2px 10px #111;
     --window-borderRadius: 10px;
@@ -40,9 +40,8 @@ body {
     --window-minimize-background: #fc9b09;
     --window-fullscreen-background: #35d315;
 
-    --window-title-padding: 2px 0 0 0;
     --window-title-fontSize: 16px;
-    
+
 }
 
 .window {
@@ -100,16 +99,18 @@ body {
 
         .window-title {
             flex-grow: 1;
+            margin: auto 0;
             text-align: center;
             white-space: nowrap;
-            padding: var(--window-title-padding);
             font-size: var(--window-title-fontSize);
+            /* transform: translateX(calc((var(--window-buttons-width) / 2) * -1)); */
         }
 
         .window-icon,
         .window-icon > * {
-            padding: 2px;
-            height: calc(var(--window-header-height) - 8px);
+            padding-left: calc(var(--window-header-height) * .12);
+            margin: auto 0;
+            height: calc(var(--window-header-height) * .6);
             text-align: center;
         }
 

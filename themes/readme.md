@@ -2,7 +2,7 @@
 
 Here is a list of themes available for this library.
 
-- OSX Terminal
-- Ubuntu 17
-- Windows 10 (comming soon)
-- Windows 98 (comming soon)
+- OSX Terminal, OSX Window (comming soon)
+- Ubuntu 17, Ubuntu 16 (comming soon), Ubuntu 18 (comming soon)
+- Bootstrap
+- Windows 10 (comming soon), Windows 98 (comming soon)
