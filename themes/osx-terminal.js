@@ -2,7 +2,7 @@
 /** 
  * Official theme for Windows.js
  * name: OSX Terminal
- * author: Ghom
+ * author: Jean-Luc Perez, Ghom
  */
 
 Window.addTheme('OSX Terminal', 'apple', {

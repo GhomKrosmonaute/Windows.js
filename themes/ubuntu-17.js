@@ -1,12 +1,11 @@
 
 /** 
  * Official theme for Windows.js
- * name: OSX Terminal
- * author: Jean-Luc Perez
- * url: www.devjl.fr
+ * name: Ubuntu 17
+ * author: Jean-Luc Perez, Ghom
  */
 
-Window.addTheme('Ubuntu v1', 'gnome', {
+Window.addTheme('Ubuntu 17', 'gnome', {
     window: {
         boxShadow: '0 5px 20px #111',
         borderRadius: '10px 10px 2px 2px',
@@ -35,7 +34,7 @@ Window.addTheme('Ubuntu v1', 'gnome', {
         backgroundColor: '#949390'
     }, 
     button_hover: {
-        backgroundColor: '#a1a1a0'
+        backgroundColor: '#b4b4b4'
     },
     close: { 
         backgroundImage: 'url("https://img.icons8.com/ios/50/000000/multiply.png")',

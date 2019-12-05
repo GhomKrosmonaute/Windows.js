@@ -46,6 +46,10 @@ const
         title = String, // title visible on top
         content = String, // HTML content of body
         style = String // StyleSheet of window (like real css file)
+        ... /* custom options...
+            You can add custom options if you use a special theme.
+            like options.icon for Ubuntu 17 official theme.
+        */
     };
 
 new Window( x, y, width, height, options ) 
