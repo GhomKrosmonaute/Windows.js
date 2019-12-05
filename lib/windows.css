@@ -41,7 +41,8 @@ body {
     --window-fullscreen-background: #35d315;
 
     --window-title-padding: 2px 0 0 0;
-
+    --window-title-fontSize: 16px;
+    
 }
 
 .window {
@@ -102,6 +103,7 @@ body {
             text-align: center;
             white-space: nowrap;
             padding: var(--window-title-padding);
+            font-size: var(--window-title-fontSize);
         }
 
         .window-icon,

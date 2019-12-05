@@ -42,6 +42,7 @@ const
     width = Number,
     height = Number,
     options = {
+        grab = Boolean, // show grab cursor while hovering header
         theme = String, // theme to use
         title = String, // title visible on top
         content = String, // HTML content of body
