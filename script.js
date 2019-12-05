@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         \`
     })
             </code></pre>
-            <h3> by Ghom </h3>
+            <h3> Access to <a href="https://github.com/CamilleAbella/Windows.js" target="_blank"> repository </a> </h3>
         `,
         style: `
             h1 { 
