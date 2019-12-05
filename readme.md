@@ -2,8 +2,8 @@
 
 A window manager for your website style !
 
-- Inspired by <a href="http://www.devjl.fr">devjl.fr</a>, for <a href="http://www.devjl.fr">devjl.fr</a>.
-- To test it go <a href="https://camilleabella.github.io/Windows.js/">HERE</a> !
+- Inspired by <a href="http://www.devjl.fr" target="_blank">devjl.fr</a>, for <a href="http://www.devjl.fr" target="_blank">devjl.fr</a>.
+- To test it go <a href="https://camilleabella.github.io/Windows.js/" target="_blank">HERE</a> !
 - To use this library, take the content of **./lib/**.
 - This library is fast and light, make on full vanilla CSS & JS.
 - CSS is simple to custom and more themes are coming !
