@@ -8,6 +8,7 @@ Here is a list of themes available for this library.
 - Ubuntu 17
 - Bootstrap
 - Windows 10 PowerShell
+- Discord Blue
 
 ## Comming soon
 
