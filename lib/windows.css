@@ -19,10 +19,10 @@
     --window-body-background: #f0f0f0;
     --window-body-textColor: #111;
     --window-body-fontFamily: 'Lato', sans-serif;
+    --window-body-fontSize: 16px;
 
     --window-header-background: #111;
     --window-header-textColor: #f0f0f0;
-    --window-header-fontFamily: 'Lato', sans-serif;
     --window-header-height: 25px;
 
     --window-buttons-width: 50px;
@@ -41,6 +41,7 @@
     --window-fullscreen-background: #35d315;
 
     --window-title-fontSize: 16px;
+    --window-title-fontFamily: 'Lato', sans-serif;
 
 }
 
@@ -52,6 +53,7 @@
     box-shadow: var(--window-boxShadow);
     background: var(--window-body-background);
     color: var(--window-body-textColor);
+    font-size: var(--window-body-fontSize);
     cursor: default;
 }
 
@@ -60,7 +62,6 @@
         height: var(--window-header-height);
         background: var(--window-header-background);
         color: var(--window-header-textColor);
-        font-family: var(--window-header-fontFamily);
         cursor: grab;
     }
 
@@ -73,7 +74,7 @@
             cursor: default;
         }
 
-            .window-buttons > div {
+            .window-button {
                 border-radius: var(--window-button-borderRadius);
                 background: var(--window-button-background);
                 width: var(--window-button-width);
@@ -83,6 +84,14 @@
                 background-position: center !important;
                 background-repeat: no-repeat !important;
                 background-size: 70% !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .window-button > svg,
+            .window-button > img {
+                height: calc(var(--window-header-height) * .6);
             }
 
             .window-close:hover {
@@ -103,14 +112,20 @@
             text-align: center;
             white-space: nowrap;
             font-size: var(--window-title-fontSize);
+            font-family: var(--window-title-fontFamily);
             /* transform: translateX(calc((var(--window-buttons-width) / 2) * -1)); */
         }
 
-        .window-icon,
-        .window-icon > * {
-            padding-left: calc(var(--window-header-height) * .12);
-            margin: auto 0;
+        .window-icon {
+            width: var(--window-header-height);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .window-icon > svg,
+        .window-icon > img {
             height: calc(var(--window-header-height) * .6);
+            width: calc(var(--window-header-height) * .6);
             text-align: center;
         }
 

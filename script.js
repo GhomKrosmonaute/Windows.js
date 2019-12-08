@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     let i=0
     for(const name in Window.themes){ i++
-        new Window( i*100, i*50, 600, 300, {
+        new Window( i*100, 150+i*34, 600, 300, {
             theme: name,
             title: 'Theme — ' + name,
             content: `
